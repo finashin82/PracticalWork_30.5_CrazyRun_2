@@ -12,7 +12,7 @@ public class PanelController : MonoBehaviour
     {
         if (!timer.IsTimeForGame)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
 
             _gameOverPanel.SetActive(true);
         }        
