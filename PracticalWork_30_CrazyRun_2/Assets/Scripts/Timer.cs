@@ -22,8 +22,11 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        currentTime -= Time.deltaTime;
+        if (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
 
-        timeEvent?.Invoke(this);       
+            timeEvent?.Invoke(this);
+        }    
     }
 }

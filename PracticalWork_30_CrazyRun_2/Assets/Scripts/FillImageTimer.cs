@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 public class FillImageTimer : MonoBehaviour
 {
-    [SerializeField] private Image _fillImageTimer;
+    [SerializeField] private Image _fillImageTimer;   
 
     public void FillImage(Timer timer)
     {
