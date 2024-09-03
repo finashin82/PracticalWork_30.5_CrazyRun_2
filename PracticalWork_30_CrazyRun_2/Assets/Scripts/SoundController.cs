@@ -17,11 +17,14 @@ public class SoundController : MonoBehaviour
         _soundWinLevel.Stop();
     }
 
-    public void SoundGameOver()
+    public void SoundGameOver(Timer timer)
     {
-        StopAllSound();
+        if(!timer.IsTimeForGame)
+        {
+            StopAllSound();
 
-        _soundGameOver.Play();
+            _soundGameOver.Play();
+        }       
     }
 
     public void SoundWinLevel() 

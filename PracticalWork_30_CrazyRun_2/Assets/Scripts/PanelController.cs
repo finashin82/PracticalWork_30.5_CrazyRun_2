@@ -6,7 +6,7 @@ public class PanelController : MonoBehaviour
 {
     [SerializeField] private GameObject _gameOverPanel;
 
-    [SerializeField] private GameObject _winPanel;
+    [SerializeField] private GameObject _winPanel;   
 
     public void GameOverPanel(Timer timer)
     {
@@ -15,6 +15,8 @@ public class PanelController : MonoBehaviour
             Time.timeScale = 0;
 
             _gameOverPanel.SetActive(true);
+
+            
         }        
     }
 
